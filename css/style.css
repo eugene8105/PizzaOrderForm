@@ -1,6 +1,19 @@
 body {
-    background-image: url('/pic_1.jpg');
+    background-image: url('../img/pic_1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
+
+  #home {
+    background-color: red;
+}
+
+#shop {
+    background-color: green;
+}
+
+#contact {
+    background-color: blue;
+    color: aliceblue;
+}
