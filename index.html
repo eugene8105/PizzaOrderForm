@@ -18,111 +18,115 @@
     <!-- <form action="" method=""> -->
     <div class="container">
         <h2>Pizza Order Form</h2>
+        <br>
+        <h34>Go through all three tabs.</h4>
+            <br>
+            <br>
 
-        <nav>
-            <ul id="tabs" class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#set_up">Set up your pizza</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#del_info">Delivery information</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#confirmation">Order confirmation</a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul id="tabs" class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#set_up">Set up your pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#del_info">Delivery information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#confirmation">Order confirmation</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <div class="tab-content">
-            <div id="set_up" class="tab-pane active">
+            <div class="tab-content">
+                <div id="set_up" class="tab-pane active">
 
-                <!-- 
+                    <!-- 
                 Meats ($1.50 each)
                 Veggies ($1.00 each) -->
-                <br>
-                <h3>Choose pizza details</h3>
-                <br>
-                <h4>Size</h4>
-                <input type="radio" name="size" id="small" data-size="small" checked="checked">
-                <label for="small">Small $7</label>
-                <input type="radio" name="size" id="medium" data-size="medium">
-                <label for="medium">Medium $9</label>
-                <input type="radio" name="size" id="large" data-size="large">
-                <label for="large">Large $12</label>
-
-                <br>
-                <br>
-                <h4>Crust</h4>
-                <input type="radio" name="crust" id="thin" data-crust="thin" checked="checked">
-                <label for="small">Thin</label>
-                <input type="radio" name="crust" id="medium" data-crust="medium">
-                <label for="medium">Pan</label>
-                <input type="radio" name="crust" id="gluten_free" data-crust="gluten_free">
-                <label for="large">Gluten free</label>
-
-                <br>
-                <br>
-                <div class="form-check">
-                    <h4>Meats $1.50 each</h4>
-                    <input type="checkbox" name="meats" id="meats-pepperoni" data-meats="pepperoni" value="Pepperoni"
-                        class="form-check-input">
-                    <label class="form-check-label" for="meats-pepperoni">Pepperoni</label>
                     <br>
-                    <input type="checkbox" name="meats" id="meats-sausage" data-meats="sausage" value="Sausage"
-                        class="form-check-input">
-                    <label class="form-check-label" for="meats-sausage">Italian sausage</label>
+                    <h3>Choose pizza details</h3>
+                    <br>
+                    <h4>Size</h4>
+                    <input type="radio" name="size" id="small" data-size="small">
+                    <label for="small">Small $7</label>
+                    <input type="radio" name="size" id="medium" data-size="medium">
+                    <label for="medium">Medium $9</label>
+                    <input type="radio" name="size" id="large" data-size="large">
+                    <label for="large">Large $12</label>
 
                     <br>
                     <br>
-                    <h4>Veggies $1.00 each</h4>
-                    <input type="checkbox" name="veggies" id="veggies-mushrooms" data-veggies="mushrooms"
-                        value="Mushrooms" class="form-check-input">
-                    <label class="form-check-label" for="veggies-mushrooms">Mushrooms</label>
+                    <h4>Crust</h4>
+                    <input type="radio" name="crust" id="thin" data-crust="thin">
+                    <label for="small">Thin</label>
+                    <input type="radio" name="crust" id="medium" data-crust="medium">
+                    <label for="medium">Pan</label>
+                    <input type="radio" name="crust" id="gluten_free" data-crust="gluten_free">
+                    <label for="large">Gluten free</label>
+
                     <br>
-                    <input type="checkbox" name="veggies" id="veggies-onions" data-veggies="onions" value="Onions"
-                        class="form-check-input">
-                    <label class="form-check-label" for="veggies-onions">Onions</label>
+                    <br>
+                    <div class="form-check">
+                        <h4>Meats $1.50 each</h4>
+                        <input type="checkbox" name="meats" id="meats-pepperoni" data-meats="pepperoni"
+                            value="Pepperoni" class="form-check-input">
+                        <label class="form-check-label" for="meats-pepperoni">Pepperoni</label>
+                        <br>
+                        <input type="checkbox" name="meats" id="meats-sausage" data-meats="sausage" value="Sausage"
+                            class="form-check-input">
+                        <label class="form-check-label" for="meats-sausage">Italian sausage</label>
+
+                        <br>
+                        <br>
+                        <h4>Veggies $1.00 each</h4>
+                        <input type="checkbox" name="veggies" id="veggies-mushrooms" data-veggies="mushrooms"
+                            value="Mushrooms" class="form-check-input">
+                        <label class="form-check-label" for="veggies-mushrooms">Mushrooms</label>
+                        <br>
+                        <input type="checkbox" name="veggies" id="veggies-onions" data-veggies="onions" value="Onions"
+                            class="form-check-input">
+                        <label class="form-check-label" for="veggies-onions">Onions</label>
+                    </div>
+
+                </div>
+                <div id="del_info" class="tab-pane">
+                    <br>
+
+                    <h3>Delivery information</h3>
+                    <label for="name" class="form-control" id="name">Name</label>
+                    <input type="text" class="form-control" id="name" />
+                    <br>
+                    <label for="address" class="form-control" id="address">Address</label>
+                    <input type="text" class="form-control" id="address" />
+                    <br>
+                    <label for="phone" class="form-control" id="phone">Phone</label>
+                    <input type="phone" class="form-control" id="phone" />
+                    <br>
+                    <!-- <button id="animateButton">Celect!</button> -->
                 </div>
 
+                <div id="confirmation" class="tab-pane">
+                    <h2>Order confirmation</h2>
+                    <table class="output table">
+                        <tr>
+                            <td>Info 1</td>
+                            <td id="info1"></td>
+                        </tr>
+                        <tr>
+                            <td>Info 2</td>
+                            <td id="info2"></td>
+                        </tr>
+                        <tr>
+                            <td>Info 3</td>
+                            <td id="Info3"></td>
+                        </tr>
+                        <tr>
+                            <td>Info 4</td>
+                            <td id="info4"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div id="del_info" class="tab-pane">
-                <br>
-
-                <h3>Delivery information</h3>
-                <label for="name" class="form-control" id="name">Name</label>
-                <input type="text" class="form-control" id="name" />
-                <br>
-                <label for="address" class="form-control" id="address">Address</label>
-                <input type="text" class="form-control" id="address" />
-                <br>
-                <label for="phone" class="form-control" id="phone">Phone</label>
-                <input type="phone" class="form-control" id="phone" />
-                <br>
-                <!-- <button id="animateButton">Celect!</button> -->
-            </div>
-
-            <div id="confirmation" class="tab-pane">
-                <h2>Order confirmation</h2>
-                <table class="output table">
-                    <tr>
-                        <td>Info 1</td>
-                        <td id="info1"></td>
-                    </tr>
-                    <tr>
-                        <td>Info 2</td>
-                        <td id="info2"></td>
-                    </tr>
-                    <tr>
-                        <td>Info 3</td>
-                        <td id="Info3"></td>
-                    </tr>
-                    <tr>
-                        <td>Info 4</td>
-                        <td id="info4"></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
 
     </div>
     <!-- </form> -->
