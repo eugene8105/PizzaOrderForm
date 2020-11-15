@@ -6,10 +6,12 @@ Size (small $7, medium $9, large $12)
 Crust (thin, pan, gluten free)
 Meats ($1.50 each)
 Veggies ($1.00 each)
+
 Step 2: Enter delivery information
 Name
 Address
 Phone
+
 Step 3: Order confirmation
 Display all of the pizza details and customer information from steps 1 and 2
 Display the subtotal, calculated tax (use a rate of 5.1 %), delivery fee ($2), and the total amount due
