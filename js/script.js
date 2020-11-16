@@ -29,6 +29,12 @@ function showOrder() {
         $("#size").html("You did not make size selection.");
     }
 
+    if (checkedCrust.length > 0) {
+        $("#crust").html(crust.val());
+    } else {
+        $("#crust").html("You did not make size selection.");
+    }
+
     // need to write for Crust
 
     // for meat
