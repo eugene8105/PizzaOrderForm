@@ -33,7 +33,7 @@ function showOrder() {
 
     if (checkedCrust.length > 0) {
         // $("#crust").html(crust.val());
-        $("#crust").text(crust.val());
+        $("#crust").text(crust);
     } else {
         // $("#crust").html("You did not make size selection.");
         $("#crust").text("You did not make size selection.");
