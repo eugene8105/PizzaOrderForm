@@ -14,8 +14,8 @@ function showTab(event) {
     showOrder();
 }
 
-function showOrder(event) {
-    event.preventDefault();
+function showOrder() {
+    // event.preventDefault();
 
     var checkedSize = $("input[name=size]:checked");
     var size = selectedRadioButton.data("size");
