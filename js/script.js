@@ -18,13 +18,13 @@ function showOrder() {
     // event.preventDefault();
 
     var checkedSize = $("input[name=size]:checked");
-    var size = selectedRadioButton.data("size");
+    var size = checkedSize.data("size");
 
     var checkedCrust = $("input[name=crust]:checked");
-    var crust = selectedRadioButton.data("crust");
+    var crust = checkedCrust.data("crust");
 
     if (checkedSize.length > 0) {
-        $("#size").html(checkedSize.val());
+        $("#size").html(size.val());
     } else {
         $("#size").html("You did not make size selection.");
     }
