@@ -2,7 +2,7 @@ $(document).ready(
     function () {
         // event handlers
         $("#tabs a").click(showTab);
-        $("#pizza_ditails_form").click(showOrder);
+        // $("input").changed(showOrder);
 
     });
 
@@ -11,6 +11,7 @@ function showTab(event) {
     event.preventDefault();
 
     $(this).tab("show");
+    showOrder();
 }
 
 function showOrder(event) {
