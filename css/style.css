@@ -5,17 +5,10 @@ body {
   background-size: cover;
 }
 
-#home {
-  background-color: red;
-}
-
-#shop {
-  background-color: green;
-}
-
-#contact {
-  background-color: blue;
-  color: aliceblue;
+table,
+td {
+  border: 1px, solid #000;
+  border-collapse: collapse;
 }
 
 /* input[type="radio"] {
