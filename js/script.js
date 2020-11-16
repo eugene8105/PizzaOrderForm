@@ -24,15 +24,19 @@ function showOrder() {
     var crust = checkedCrust.data("crust");
 
     if (checkedSize.length > 0) {
-        $("#size").html(size.val());
+        // $("#size").html(size.val());
+        $("#size").text(size);
     } else {
-        $("#size").html("You did not make size selection.");
+        // $("#size").html("You did not make size selection.");
+        $("#size").text("You did not make size selection.");
     }
 
     if (checkedCrust.length > 0) {
-        $("#crust").html(crust.val());
+        // $("#crust").html(crust.val());
+        $("#crust").text(crust.val());
     } else {
-        $("#crust").html("You did not make size selection.");
+        // $("#crust").html("You did not make size selection.");
+        $("#crust").text("You did not make size selection.");
     }
 
     // need to write for Crust
@@ -47,9 +51,9 @@ function showOrder() {
             meatResult += (this).val() + "<br/>"
         });
 
-        $("#meat").html(meatResult.val());
+        $("#meat").text(meatResult);
     } else {
-        $("#meat").html("You did not select any meat.");
+        $("#meat").text("You did not select any meat.");
     }
 
     // for veggies
@@ -62,9 +66,9 @@ function showOrder() {
             veggiesResult += (this).val() + "<br/>"
         });
 
-        $("#veggies").html(veggiesResult.val());
+        $("#veggies").text(veggiesResult);
     } else {
-        $("#veggies").html("You did not select any veggies.");
+        $("#veggies").text("You did not select any veggies.");
     }
 
 }
