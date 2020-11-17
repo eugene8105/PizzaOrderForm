@@ -43,7 +43,7 @@ function showOrder() {
 
     // for meat
     var meatsChecked = $("input[name=meats]:checked");
-    if (meatChecked.length > 0) {
+    if (meatsChecked.length > 0) {
 
         var meatResult = meatsChecked.length;
 
