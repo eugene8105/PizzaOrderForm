@@ -48,7 +48,7 @@ function showOrder() {
         var meatResult = meatsChecked.length;
 
         meatsChecked.each(function () {
-            meatResult += (this).val() + "<br/>"
+            meatResult += $(this).val() + "<br/>"
         });
 
         $("#meat").html(meatResult);
@@ -63,7 +63,7 @@ function showOrder() {
         var veggiesResult = veggiesChecked.length;
 
         veggiesChecked.each(function () {
-            veggiesResult += (this).val() + "<br/>"
+            veggiesResult += $(this).val() + "<br/>"
         });
 
         $("#veggies").html(veggiesResult);
