@@ -23,7 +23,7 @@ function showOrder() {
     // Veggies ($1.00 each)
     // tax 5.1 %
     // delivery fee $2 
-
+    var deliveryFee = 2;
     var sizeCost = 0;
     var meatCost = 1.50;
     var veggiesCost = 1.00;
@@ -117,8 +117,9 @@ function showOrder() {
 
     calcTaxes = taxCost * totalNoTax;
 
-    totalCost = calcTaxes + totalNoTax;
+    totalCost = calcTaxes + totalNoTax + deliveryFee;
 
+    $("#delivery").html(deliveryFee.toFixed(2));
     $("#subtotal").html(totalNoTax.toFixed(2));
     $("#taxTotal").html(calcTaxes.toFixed(2));
     $("#totalDue").html(totalCost.toFixed(2));
