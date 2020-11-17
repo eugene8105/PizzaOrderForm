@@ -42,33 +42,33 @@ function showOrder() {
     // need to write for Crust
 
     // for meat
-    var meatChecked = $("input[name=meats]:checked");
+    var meatsChecked = $("input[name=meats]:checked");
     if (meatChecked.length > 0) {
 
-        var meatResult = meatChecked.length;
+        var meatResult = meatsChecked.length;
 
         meatsChecked.each(function () {
             meatResult += (this).val() + "<br/>"
         });
 
-        $("#meat").text(meatResult);
+        $("#meat").html(meatResult);
     } else {
-        $("#meat").text("You did not select any meat.");
+        $("#meat").html("You did not select any meat.");
     }
 
     // for veggies
-    var veggiesdChecked = $("input[name=veggies]:checked");
-    if (veggiesdChecked.length > 0) {
+    var veggiesChecked = $("input[name=veggies]:checked");
+    if (veggiesChecked.length > 0) {
 
-        var veggiesResult = veggiesdChecked.length;
+        var veggiesResult = veggiesChecked.length;
 
-        meatsChecked.each(function () {
+        veggiesChecked.each(function () {
             veggiesResult += (this).val() + "<br/>"
         });
 
-        $("#veggies").text(veggiesResult);
+        $("#veggies").html(veggiesResult);
     } else {
-        $("#veggies").text("You did not select any veggies.");
+        $("#veggies").html("You did not select any veggies.");
     }
 
 }
