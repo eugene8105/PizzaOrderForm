@@ -80,7 +80,7 @@ function showOrder() {
         });
 
         // if it's not going to work, chenge back to .html
-        $("#meat").append(meatResult);
+        $("#meat").html(meatResult);
     } else {
         $("#meat").html("You did not select any meat.");
     }
@@ -98,7 +98,7 @@ function showOrder() {
             veggiesResult += $(this).val() + "<br/>"
         });
         // if it's not going to work, chenge back to .html
-        $("#veggies").append(veggiesResult);
+        $("#veggies").html(veggiesResult);
     } else {
         $("#veggies").html("You did not select any veggies.");
     }
